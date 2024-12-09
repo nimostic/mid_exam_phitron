@@ -23,10 +23,8 @@ book2 = Book(2, "To Kill a Mockingbird", "Harper Lee", True)
 Library.entry_book(book1)
 Library.entry_book(book2)
 
-# for book in Library.book_list:
-#      print(f"Book ID: {book.book_id}, Title: {book.title}, Author: {book.author}, Available: {book.availability}")       
 
 result = Book.borrow_book(book1)
 print(result)
-result2 = Book.borrow_book(book2)
+result2 = Book.borrow_book(book1)
 print(result2)
